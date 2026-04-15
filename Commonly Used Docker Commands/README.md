@@ -1,4 +1,4 @@
-### **commonly used Docker commands**, along with examples for each. These examples are practical and easy to follow.
+### **Commonly used Docker commands**, along with examples for each. These examples are practical and easy to follow.
 
 ---
 
