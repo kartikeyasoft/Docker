@@ -2,7 +2,7 @@
 
 ---
 
-#### **1. Check Docker Version**
+### **1. Check Docker Version**
 ```bash
 docker --version
 ```
