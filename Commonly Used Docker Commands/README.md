@@ -14,7 +14,7 @@ Docker version 20.10.12, build e91ed57
 
 ---
 
-## **2. Run a Container**
+### **2. Run a Container**
 Run a container from an image (e.g., `nginx`) and expose port 80.
 ```bash
 docker run -d -p 8080:80 nginx
@@ -25,7 +25,7 @@ Example:
 
 ---
 
-## **3. List Running Containers**
+### **3. List Running Containers**
 ```bash
 docker ps
 ```
@@ -38,7 +38,7 @@ c1a2b3d4e5f6   nginx     "/docker-entrypoint.…"   5 minutes ago Up 5 minutes 0
 
 ---
 
-## **4. List All Containers**
+### **4. List All Containers**
 List all containers, including stopped ones.
 ```bash
 docker ps -a
@@ -46,7 +46,7 @@ docker ps -a
 
 ---
 
-## **5. Stop a Running Container**
+### **5. Stop a Running Container**
 Stop a container using its name or ID.
 ```bash
 docker stop CONTAINER_ID
@@ -58,7 +58,7 @@ docker stop c1a2b3d4e5f6
 
 ---
 
-## **6. Remove a Container**
+### **6. Remove a Container**
 Remove a stopped container.
 ```bash
 docker rm CONTAINER_ID
@@ -70,7 +70,7 @@ docker rm c1a2b3d4e5f6
 
 ---
 
-## **7. Pull an Image**
+### **7. Pull an Image**
 Download an image from Docker Hub.
 ```bash
 docker pull IMAGE_NAME
@@ -82,7 +82,7 @@ docker pull ubuntu
 
 ---
 
-## **8. List Images**
+### **8. List Images**
 View all downloaded images.
 ```bash
 docker images
@@ -97,7 +97,7 @@ ubuntu          latest    xyz789ghi012   5 days ago     29MB
 
 ---
 
-## **9. Remove an Image**
+### **9. Remove an Image**
 Delete an unused image.
 ```bash
 docker rmi IMAGE_ID
@@ -109,7 +109,7 @@ docker rmi abc123def456
 
 ---
 
-## **10. Build an Image**
+### **10. Build an Image**
 Build an image from a `Dockerfile`.
 ```bash
 docker build -t IMAGE_NAME .
@@ -123,7 +123,7 @@ docker build -t my-app .
 
 ---
 
-## **11. View Container Logs**
+### **11. View Container Logs**
 Check logs of a running container.
 ```bash
 docker logs CONTAINER_ID
@@ -135,7 +135,7 @@ docker logs c1a2b3d4e5f6
 
 ---
 
-## **12. Execute Commands Inside a Container**
+### **12. Execute Commands Inside a Container**
 Run a command inside a running container.
 ```bash
 docker exec -it CONTAINER_ID COMMAND
@@ -149,7 +149,7 @@ docker exec -it c1a2b3d4e5f6 bash
 
 ---
 
-## **13. Stop All Running Containers**
+### **13. Stop All Running Containers**
 Stop all running containers at once.
 ```bash
 docker stop $(docker ps -q)
@@ -163,7 +163,7 @@ d7e8f9g0h1i2
 
 ---
 
-## **14. Remove All Stopped Containers**
+### **14. Remove All Stopped Containers**
 Remove all containers that are not running.
 ```bash
 docker rm $(docker ps -aq)
@@ -171,7 +171,7 @@ docker rm $(docker ps -aq)
 
 ---
 
-## **15. Create a Volume**
+### **15. Create a Volume**
 Create a persistent storage volume.
 ```bash
 docker volume create VOLUME_NAME
@@ -183,7 +183,7 @@ docker volume create my-volume
 
 ---
 
-## **16. Attach a Volume to a Container**
+### **16. Attach a Volume to a Container**
 Mount a volume inside a container.
 ```bash
 docker run -d -v VOLUME_NAME:/path/in/container IMAGE_NAME
@@ -195,7 +195,7 @@ docker run -d -v my-volume:/data nginx
 
 ---
 
-## **17. View Docker Networks**
+### **17. View Docker Networks**
 List all networks.
 ```bash
 docker network ls
@@ -203,7 +203,7 @@ docker network ls
 
 ---
 
-## **18. Create a Network**
+### **18. Create a Network**
 Create a custom network.
 ```bash
 docker network create NETWORK_NAME
@@ -215,7 +215,7 @@ docker network create my-network
 
 ---
 
-## **19. Connect a Container to a Network**
+### **19. Connect a Container to a Network**
 Attach a container to a specific network.
 ```bash
 docker network connect NETWORK_NAME CONTAINER_ID
@@ -227,7 +227,7 @@ docker network connect my-network c1a2b3d4e5f6
 
 ---
 
-## **20. Start Services with Docker Compose**
+### **20. Start Services with Docker Compose**
 Run services defined in a `docker-compose.yml` file.
 ```bash
 docker-compose up
@@ -235,7 +235,7 @@ docker-compose up
 
 ---
 
-## **21. Stop Services with Docker Compose**
+### **21. Stop Services with Docker Compose**
 Stop services and remove containers, networks, and volumes created by `docker-compose`.
 ```bash
 docker-compose down
@@ -243,7 +243,7 @@ docker-compose down
 
 ---
 
-## **22. View Docker System Information**
+### **22. View Docker System Information**
 Check overall system usage (disk, containers, images, etc.).
 ```bash
 docker system df
@@ -251,7 +251,7 @@ docker system df
 
 ---
 
-## **23. Remove Unused Resources**
+### **23. Remove Unused Resources**
 Clean up unused images, containers, volumes, and networks.
 ```bash
 docker system prune
